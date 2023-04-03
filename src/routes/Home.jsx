@@ -11,9 +11,9 @@ import {
   Legend,
 } from "recharts";
 
-const API_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
+const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
-function Home() {
+const Home = () => {
   const [events, setEvents] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
